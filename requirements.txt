@@ -4,3 +4,5 @@ langchain-openai
 scikit-learn
 langchain-ollama
 beautifulsoup4
+sentence-transformers
+langchain-huggingface
