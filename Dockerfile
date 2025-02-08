@@ -9,7 +9,7 @@ COPY . /app
 WORKDIR /app
 
 # Install Python dependencies
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # (Optional) Pre-download a smaller model so it's ready at runtime.
 RUN sh -c "ollama serve & sleep 10 && ollama pull llama3.2:1b && pkill ollama"
